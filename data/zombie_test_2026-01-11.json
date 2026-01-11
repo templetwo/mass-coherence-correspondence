@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-01-11T00:55:00",
+  "device": "mps (Mac Studio)",
+  "models": {
+    "zombie": {
+      "name": "GPT-2 (124M)",
+      "type": "feed-forward transformer",
+      "phi_proxy": "low"
+    },
+    "cortex": {
+      "name": "Mamba-130M",
+      "type": "state-space model",
+      "phi_proxy": "high (recurrent state)"
+    }
+  },
+  "config": {
+    "epsilon": 0.1,
+    "num_prompts": 10,
+    "num_perturbation_samples": 5
+  },
+  "results": {
+    "zombie": {
+      "clean_ppl_mean": 964.9,
+      "robust_ppl_mean": 1372.5,
+      "robustness_delta": 407.67,
+      "commutation_cost": 0.4437
+    },
+    "cortex": {
+      "clean_ppl_mean": 382.9,
+      "robust_ppl_mean": 4853.8,
+      "robustness_delta": 4470.95,
+      "commutation_cost": 0.8525
+    }
+  },
+  "verdict": {
+    "zombie_more_robust": true,
+    "zombie_lower_comm_cost": true,
+    "mcc_status": "CHALLENGED",
+    "note": "Feed-forward arch shows higher robustness AND lower commutation cost than state-space. This contradicts MCC Prediction 4."
+  },
+  "caveats": [
+    "High variance in PPL measurements",
+    "Mamba using sequential fallback (not optimized kernels)",
+    "Architecture type as proxy for Φ, not true IIT measurement",
+    "Mamba showed numerical instability on some prompts"
+  ]
+}
