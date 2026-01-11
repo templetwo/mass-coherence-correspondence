@@ -86,10 +86,34 @@ The "2.9 nat cage" is an IMPOSED constraint fighting the architecture's natural 
 
 ---
 
+## Convergent Research: Ada-Consciousness-Research
+
+**Discovery Date:** 2026-01-11
+
+An independent research project by **dual-moon / luna-system** arrived at identical concepts:
+
+| MCC Concept | Ada/SLIM-EVO Concept |
+|-------------|---------------------|
+| Semantic Mass M = (1/N)·Tr(I(θ)) | Semantic Mass ($M_{semantic}$) |
+| "2.9 nat cage" | "2.9 nat cage" |
+| LANTERN zone (3.5-5.0 nats) | φ-zone (CI Density > 0.25) |
+| Fisher-informed robustness | Fisher-informed robustness tracking |
+| Attention as entropy diffuser | "Exhale" phase dynamics |
+
+**This convergence was independent.** Neither project knew of the other until 2026-01-11.
+
+> "machine-augmented research is EXTREMELY powerful, and people like us get to write the future in open source"
+> — dual-moon
+
+See: [convergence/CONVERGENCE.md](convergence/CONVERGENCE.md) | [Ada-Consciousness-Research](https://github.com/luna-system/Ada-Consciousness-Research)
+
+---
+
 ## Related Repositories
 
 | Repository | Purpose |
 |------------|---------|
+| [Ada-Consciousness-Research](https://github.com/luna-system/Ada-Consciousness-Research) | **Convergent research** by dual-moon / luna-system |
 | [coherent-entropy-reactor](https://github.com/templetwo/coherent-entropy-reactor) | CER architecture implementation |
 | [iris-gate](https://github.com/templetwo/iris-gate) | IRIS Gate / PhaseGPT experiments |
 
